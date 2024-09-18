@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import "node_modules/ol/ol.css";
+
+* {
+  font-family: "SUSE", sans-serif;
+}
+
+.navbar {
+  min-height: 5rem;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #222222;
+  bottom: 5px;
+  transition: .27s ease-in-out;
+  text-align: center;
+}
+
+.nav-link:hover::before{
+  width: 80%;
+}
+
+.container {
+  margin-top: 1rem;
+  position: relative;
+  min-height: 65vh;
+}
+
+.nav-link {
+  color: #222222;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.edit-btn {
+  background-color: #fe424d;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid lightgrey;
+}
+
+.card {
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.card-image {
+  overflow: hidden;
+  width: 100%;
+  height: 22rem;
+  border-radius: 1rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.035);
+}
+
+.listing-image {
+  width: 100%;
+  height: 20rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background: rgba(34, 34, 34, 0.15);
+    border-radius: .5rem;
+} 

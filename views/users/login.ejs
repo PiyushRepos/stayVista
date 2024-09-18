@@ -1,0 +1,46 @@
+<% layout("./layouts/boilerplate.ejs") %>
+
+<div class="row mt-3 mt-10">
+  <div
+    class="col-8 offset-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 border border-secondary rounded-3 py-3 px-4"
+  >
+    <h2 class="text-center">Login</h2>
+    <form action="/login" method="post" novalidate class="needs-validation">
+      <div class="mb-3">
+        <label class="fw-semibold" for="username" class="form-label"
+          >Username</label
+        >
+        <input
+          autocomplete="on"
+          type="text"
+          name="username"
+          class="form-control"
+          id="username"
+          required
+          placeholder="username"
+        />
+        <div class="invalid-feedback">Email is required.</div>
+      </div>
+      <div class="mb-3">
+        <label class="fw-semibold" for="password" class="form-label"
+          >Password</label
+        >
+        <input
+          autocomplete="on"
+          type="password"
+          name="password"
+          class="form-control"
+          id="password"
+          required
+          placeholder="Password"
+        />
+        <div class="invalid-feedback">Password is required.</div>
+      </div>
+      <button class="btn btn-dark w-100">Login</button>
+    </form>
+    <p class="text-muted text-center mt-2">
+      Don't have an account?
+      <a class="text-muted" href="/signup">SignUp</a>
+    </p>
+  </div>
+</div>
